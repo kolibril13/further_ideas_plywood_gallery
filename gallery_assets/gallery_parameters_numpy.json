@@ -1,0 +1,52 @@
+{
+  "Numpy": [
+    {
+      "image_path": "gallery_assets/Numpy_001_Header1.png",
+      "celltype": "Header",
+      "css": "border: 3px solid #ED6A5A;",
+      "code": "import matplotlib.pyplot as plt\nimport numpy as np\nimport scipy.ndimage\n\n\ndef plot_voxels(varray, ax=None, title=None, linewidth=0.8, aspect=None):\n\n    if ax == None:\n        fig = plt.figure(figsize=(16 / 2, 9 / 2))\n        ax = fig.add_subplot(1, 1, 1, projection=\"3d\")\n    ax.view_init(30, 200)\n    colors = cmap(varray)\n    ax.voxels(varray, facecolors=colors, edgecolor=\"black\", linewidth=linewidth)\n    ax.axis(\"off\")\n    if aspect:\n        ax.set_box_aspect(aspect=aspect)\n    if title:\n        ax.set_title(title, fontsize=30)\n\n\ncmap = plt.get_cmap(\"YlGnBu\")"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_002_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "voxelarrray = np.uint8(scipy.ndimage.generate_binary_structure(3, 1))\nvoxelarrray[0, 1, 1] = 100\nvoxelarrray[1, 1, 2] = 200\nplot_voxels(voxelarrray)"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_003_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "plot_voxels(voxelarrray.swapaxes(0, 1))"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_004_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "plot_voxels(voxelarrray.swapaxes(2, 1))"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_005_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "stacked_array = np.concatenate((voxelarrray, voxelarrray), axis=0)\nplot_voxels(stacked_array, aspect=stacked_array.shape)"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_006_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "stacked_array = np.concatenate((voxelarrray, voxelarrray), axis=1)\nplot_voxels(stacked_array, aspect=stacked_array.shape)"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_007_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "stacked_array = np.concatenate((voxelarrray, voxelarrray), axis=2)\nplot_voxels(stacked_array, aspect=stacked_array.shape)"
+    },
+    {
+      "image_path": "gallery_assets/Numpy_008_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "stacked_array = np.concatenate((voxelarrray, voxelarrray, voxelarrray), axis=2)\nplot_voxels(stacked_array, aspect=stacked_array.shape)"
+    }
+  ]
+}

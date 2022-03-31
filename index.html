@@ -174,7 +174,7 @@
         document.getElementById('version_number').innerHTML = whole_string;
 
         let request1 = new XMLHttpRequest();
-        request1.open("GET", "gallery_assets/gallery_parameters_matplotlib.json", false);
+        request1.open("GET", "gallery_assets/gallery_parameters.json", false);
         request1.send(null);
 
         let jsonData1 = JSON.parse(request1.responseText);
@@ -203,6 +203,12 @@
         </ul>
     </div>
 </body>
-<div style="position: absolute; bottom: 0; right:0" >  <a href="index_numpy.html"> Next Page: Numpy</a></div>
+<div style="position: absolute; bottom: 0; right:0" >
+    <a href="index.html"> ImageGrid</a>
+    <a href="index_numpy.html"> Numpy</a>
+    <a href="index_2DArray.html"> 2D Arrays</a>
+    <a href="index_2DArray.html"> 3D Arrays</a> 
+    &#160 &#160
+</div>
 
 </html>
