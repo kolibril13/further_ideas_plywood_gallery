@@ -3,7 +3,7 @@
     {
       "image_path": "gallery_assets/2D_Arrays_001_Header1.png",
       "celltype": "Header",
-      "css": "border: 3px solid #ED6A5A;",
+      "css": "border: 3px solid #ED6A5A;height: 150px; width: auto;",
       "code": "import matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\n\n\ndef disp(x, sep=&#39;.0f&#39;, annot=False,  figsize=(5,5)): \n    plt.figure(figsize =figsize)\n    plt.axis(\"off\")\n    sns.heatmap(x,annot=annot,fmt=sep, cmap=\"YlGnBu\", cbar=False); # Change range with: vmin=0, vmax=1"
     },
     {
