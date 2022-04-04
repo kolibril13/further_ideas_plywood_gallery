@@ -1,4 +1,4 @@
-project_name: Plywood Gallery - Numpy
+project_name: Plywood Gallery - Functions
 repository_url: https://github.com/kolibril13/further_ideas_plywood_gallery
 description: |
   Normal cells are independent of each other, and can be run togehter with the "Header" cell. <br>
@@ -14,7 +14,7 @@ custom_footer: |
       <a href="web5_functions.html"> Functions</a> 
       &#160 &#160
   </div>
-gallary_parameters_path: gallery_assets_Numpy/gallery_parameters.json
+gallary_parameters_path: gallery_assets_Functions/gallery_parameters.json
 
 
 

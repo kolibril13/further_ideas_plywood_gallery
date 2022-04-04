@@ -11,6 +11,7 @@ custom_footer: |
       <a href="web2_Numpy.html"> Numpy</a>
       <a href="web3_2DArray.html"> 2D Arrays</a>
       <a href="web4_3DArray.html"> 3D Arrays</a> 
+      <a href="web5_functions.html"> Functions</a> 
       &#160 &#160
   </div>
 gallary_parameters_path: gallery_assets_ImageGrid/gallery_parameters.json
