@@ -3,21 +3,18 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="HTMLBanner.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
     <script>
-        hljs.initHighlightingOnLoad();
+        hljs.highlightAll();
         function display_code_from_gallery_cell(imgs) {
             var name = imgs.dataset.code;
             document.getElementById("info_field").innerHTML = name
-            hljs.initHighlighting.called = false;
-            hljs.initHighlighting();
+            hljs.highlightAll();
         }
         function reset_content(imgs) {
             document.getElementById("info_field").innerHTML = "<br><br>"
-            hljs.initHighlighting.called = false;
-            hljs.initHighlighting();
+            hljs.highlightAll();
         }
     </script>
     <style>
@@ -133,35 +130,43 @@
         .gallery_entry:hover {
             opacity: 0.7;
         }
+
+        pre,
+        code {
+            white-space: pre-line;
+        }
     </style>
-    <title>Plywood Gallery- Numpy</title>
+    <title>Plywood Gallery - Numpy</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
-    <!-- this plywood icon is dedicated to the Marble Machine X by Wintergatan https://youtu.be/JgM2ruB8M34?t=614 -->
+    <!-- the original plywood icon is dedicated to the Marble Machine X by Wintergatan https://youtu.be/JgM2ruB8M34?t=614 -->
 
 </head>
 
 <body style="background-color:#ece6e2;">
     <div style="text-align:center">
-        <h2>Plywood Gallery-Numpy</h2> Repo: <a
-            href="https://github.com/kolibril13/further_ideas_plywood_gallery">https://github.com/kolibril13/further_ideas_plywood_gallery</a>
+        <h2>Plywood Gallery - Numpy</h2>
+        Repo: <a href=" https://github.com/kolibril13/further_ideas_plywood_gallery">https://github.com/kolibril13/further_ideas_plywood_gallery</a>
     </div>
     <div> <small>
             <br>
             <b> Info: </b>
-            Normal cells are independent of each other, and can be run
-            togehter with the "Header" cell. <br>
-            A "Dependent" cell depends on the "Normal" cell left to it.<br>
-            A "Dependent" cell depends on another "Dependent" cell left to
-            it.<br>
-        </small> </div>
+            Normal cells are independent of each other, and can be run togehter with the "Header" cell. <br>
+            A "Dependent" cell depends on the "Normal" cell left to it. <br>
+            A "Dependent" cell depends on another "Dependent" cell left to it.
+
+            <br>
+        </small>
+    </div>
 
     <div class="div1">
         <pre>
-<b>Here is the corresponding code:</b>
-<code class="python" id="info_field"> <br> </code>
-</pre>
+        <b style="background-color:#ece6e2;">Here is the corresponding code:</b>
+            <code class="python" id="info_field"> <br> </code>
+        </pre>
 
-        <div class='block2'><button type="button" onclick="reset_content(this)">X</button></div>
+        <div class='block2'>
+            <button type="button" onclick="reset_content(this)">X</button>
+        </div>
     </div>
 
     <div class="box">
@@ -174,7 +179,7 @@
         document.getElementById('version_number').innerHTML = whole_string;
 
         let request1 = new XMLHttpRequest();
-        request1.open("GET", "gallery_assets/gallery_parameters_numpy.json", false);
+        request1.open("GET", "gallery_assets_Numpy/gallery_parameters.json", false);
         request1.send(null);
 
         let jsonData1 = JSON.parse(request1.responseText);
@@ -192,6 +197,7 @@
             }
         }
     </script>
+
     <div class="box2">
         <ul class="legend">
             <li><span class="label1"></span> Header</li>
@@ -202,13 +208,16 @@
             <br>
         </ul>
     </div>
-</body>
-<div style="position: absolute; bottom: 0; right:0" >
-    <a href="index.html"> ImageGrid</a>
-    <a href="index_numpy.html"> Numpy</a>
-    <a href="index_2DArray.html"> 2D Arrays</a>
-    <a href="index_2DArray.html"> 3D Arrays</a> 
+
+    <div style="position: fixed; bottom: 10px; right:10px" >
+    <a href="web1_ImageGrid.html"> ImageGrid</a>
+    <a href="web2_Numpy.html"> Numpy</a>
+    <a href="web3_2DArray.html"> 2D Arrays</a>
+    <a href="web4_3DArray.html"> 3D Arrays</a> 
     &#160 &#160
 </div>
+
+
+</body>
 
 </html>
