@@ -1,6 +1,6 @@
-project_name: Plywood Gallery - 2DArray
+project_name: Plywood Gallery - Pathlib
 repository_url: https://github.com/kolibril13/further_ideas_plywood_gallery
-user_content_version: 1.22.3 (Numpy)
+user_content_version: 3.9.12 (Python, Pathlib)
 description: |
   Normal cells are independent of each other, and can be run togehter with the "Header" cell. <br>
   A "Dependent" cell depends on the "Normal" cell left to it. <br>
@@ -16,7 +16,7 @@ custom_footer: |
       <a href="web6_Pathlib.html"> Pathlib</a> 
       &#160 &#160
   </div>
-gallary_parameters_path: gallery_assets_3_2DArray/gallery_parameters.json
+gallary_parameters_path: gallery_assets_6_Pathlib/gallery_parameters.json
 
 
 

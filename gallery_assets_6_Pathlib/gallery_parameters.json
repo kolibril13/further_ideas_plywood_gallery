@@ -1,0 +1,22 @@
+{
+  "Pathlib": [
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_001_Header1.png",
+      "celltype": "Header",
+      "css": "border: 3px solid #ED6A5A;width: 270px; height: auto;",
+      "code": "from pathlib import Path"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_002_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
+      "code": "path = Path.cwd() / \"new_folder\"\npath.mkdir()"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_003_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
+      "code": "path = Path.cwd() / \"new_folder\"\npath.rmdir()"
+    }
+  ]
+}
