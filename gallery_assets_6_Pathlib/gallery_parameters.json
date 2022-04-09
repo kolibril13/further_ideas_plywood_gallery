@@ -17,6 +17,12 @@
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
       "code": "path = Path.cwd() / \"new_folder\"\npath.rmdir()"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_004_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
+      "code": "path = Path.cwd() / \"new_folder\"\nif path.exists():\n    print(\"File is there\")\nelse: \n    print(\"File is not there\")"
     }
   ]
 }
