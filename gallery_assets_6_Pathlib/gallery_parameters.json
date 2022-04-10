@@ -1,28 +1,64 @@
 {
-  "Pathlib": [
+  "Pathlib - Elements": [
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_001_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_001_Header1.png",
       "celltype": "Header",
-      "css": "border: 3px solid #ED6A5A;width: 270px; height: auto;",
-      "code": "from pathlib import Path"
+      "css": "border: 3px solid #ED6A5A;width: 600px; height: auto; display:block",
+      "code": "from pathlib import Path\nmypath = Path(\"/usr/okapi/projects/plywood_gallery/README.md\")"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_002_Normal.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_002_Header1.png",
       "celltype": "Normal",
-      "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
-      "code": "path = Path.cwd() / \"new_folder\"\npath.mkdir()"
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.suffix"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_003_Normal.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_003_Header1.png",
       "celltype": "Normal",
-      "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
-      "code": "path = Path.cwd() / \"new_folder\"\npath.rmdir()"
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.stem"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_004_Normal.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_004_Header1.png",
       "celltype": "Normal",
-      "css": "border: 3px solid #007AB8;width: 270px; height: auto;",
-      "code": "path = Path.cwd() / \"new_folder\"\nif path.exists():\n    print(\"File is there\")\nelse: \n    print(\"File is not there\")"
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.name"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_005_Header1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "project_path = Path(\"/usr/okapi/projects/\")\nstr(mypath.relative_to(project_path))"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_006_Header1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "user_path = Path(\"/usr/okapi/\")\nstr(mypath.relative_to(user_path))"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_007_Header1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.absolute())"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_008_Header1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.parent)"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_009_Header1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.parents[2])"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_010_Header1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.anchor"
     }
   ]
 }
