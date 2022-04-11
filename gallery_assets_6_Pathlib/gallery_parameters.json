@@ -10,55 +10,55 @@
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_002_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "mypath.suffix"
+      "code": "mypath.anchor"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_003_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "mypath.stem"
+      "code": "str(mypath.parents[2])"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_004_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "mypath.name"
+      "code": "str(mypath.parent)"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_005_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "project_path = Path(\"/usr/okapi/projects/\")\nstr(mypath.relative_to(project_path))"
+      "code": "str(mypath.absolute())"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_006_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "user_path = Path(\"/usr/okapi/\")\nstr(mypath.relative_to(user_path))"
+      "code": "str(mypath.relative_to(mypath.parents[2]))"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_007_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "str(mypath.absolute())"
+      "code": "str(mypath.relative_to(mypath.parents[1]))"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_008_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "str(mypath.parent)"
+      "code": "mypath.name"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_009_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "str(mypath.parents[2])"
+      "code": "mypath.stem"
     },
     {
       "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_010_Header1.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
-      "code": "mypath.anchor"
+      "code": "mypath.suffix"
     }
   ],
   "Pathlib -  Further Functions": [
