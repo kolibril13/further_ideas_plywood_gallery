@@ -3,7 +3,7 @@
     {
       "image_path": "gallery_assets_1_ImageGrid/MPL_001_Header1.png",
       "celltype": "Header",
-      "css": "border: 3px solid #ED6A5A;",
+      "css": "border: 3px solid #ED6A5A;height: 150px; width: auto;",
       "code": "import matplotlib.pyplot as plt\nfrom mpl_toolkits.axes_grid1 import ImageGrid\nimport matplotlib\nimport numpy as np\n\n\ndef set_circle(array, radius, value):\n    x, y = np.indices(array.shape)\n    new_array = array.copy()\n    new_array[\n        (x - int(len(x) / 2)) ** 2 + (y - int(len(y) / 2)) ** 2 < radius**2\n    ] = value\n    return new_array\n\n\narray = np.zeros((101, 101))\nim1 = set_circle(array, 3 * 12, 1)\nim2 = set_circle(im1, 3 * 10, 2)\nim3 = set_circle(im2, 3 * 8, 3)\nim4 = set_circle(im3, 3 * 6, 4)\nplt.rcParams[\"figure.dpi\"] = 300"
     },
     {
@@ -81,7 +81,7 @@
     {
       "image_path": "gallery_assets_1_ImageGrid/MPL_014_LabelMode.png",
       "celltype": "Normal",
-      "css": "border: 3px solid #007AB8;height: 75px; width: auto;",
+      "css": "border: 3px solid #007AB8;height: 75px; width: auto; ",
       "code": "fig = plt.figure(figsize=(4, 4))\ngrid = ImageGrid(\n    fig,\n    111,\n    nrows_ncols=(1, 4),\n    axes_pad=0.05,\n    label_mode=\"1\",\n    share_all=False,\n    cbar_location=\"right\",\n    cbar_mode=\"single\",\n    cbar_size=\"10%\",\n    cbar_pad=0.05,\n)\nvmax, vmin = np.max(im4), np.min(im4)\nnorm = matplotlib.colors.Normalize(vmax=vmax, vmin=vmin)\n\nfor ax, img, cax in zip(grid, [im1, im2, im3, im4], grid.cbar_axes):\n    im = ax.imshow(img, cmap=\"YlGnBu\", norm=norm)\nax.cax.colorbar(im)\ngrid[0].set_xlabel(\"X\")\ngrid[0].set_ylabel(\"Y\")"
     },
     {
