@@ -2,9 +2,7 @@ project_name: Plywood Gallery - 3DArray
 repository_url: https://github.com/kolibril13/further_ideas_plywood_gallery
 user_content_version: 1.22.3 (Numpy)
 description: |
-  Normal cells are independent of each other, and can be run togehter with the "Header" cell. <br>
-  A "Dependent" cell depends on the "Normal" cell left to it. <br>
-  A "Dependent" cell depends on another "Dependent" cell left to it.
+  Normal cells are independent of each other, and can be run togehter with the "Header" cell. 
 favicon: icon.png
 custom_footer: |
   <div style="position: fixed; bottom: 10px; right:10px" >
