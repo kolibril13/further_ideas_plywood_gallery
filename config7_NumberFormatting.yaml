@@ -1,6 +1,6 @@
-project_name: Plywood Gallery - 3DArray
+project_name: Plywood Gallery - Number Formatting
 repository_url: https://github.com/kolibril13/further_ideas_plywood_gallery
-user_content_version: 1.22.3 (Numpy)
+user_content_version: 3.9.12 (Python, f-String)
 description: |
   Normal cells are independent of each other, and can be run togehter with the "Header" cell. <br>
   A "Dependent" cell depends on the "Normal" cell left to it. <br>
@@ -17,7 +17,7 @@ custom_footer: |
       <a href="web7_NumberFormatting.html"> f-String</a> 
       &#160 &#160
   </div>
-gallery_parameters_path: gallery_assets_4_3DArray/gallery_parameters.json
+gallery_parameters_path: gallery_assets_7_NumberFormatting/gallery_parameters.json
 
 
 

@@ -14,6 +14,7 @@ custom_footer: |
       <a href="web4_3DArray.html"> 3D Arrays</a> 
       <a href="web5_functions.html"> Functions</a> 
       <a href="web6_Pathlib.html"> Pathlib</a> 
+      <a href="web7_NumberFormatting.html"> f-String</a> 
       &#160 &#160
   </div>
 gallery_parameters_path: gallery_assets_3_2DArray/gallery_parameters.json
