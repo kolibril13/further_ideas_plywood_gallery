@@ -7,55 +7,55 @@
       "code": "from pathlib import Path\nmypath = Path(\"/usr/okapi/projects/plywood_gallery/README.md\")"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_002_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_002_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "mypath.anchor"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_003_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_003_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "str(mypath.parents[2])"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_004_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_004_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "str(mypath.parent)"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_005_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_005_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "str(mypath.absolute())"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_006_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_006_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "str(mypath.relative_to(mypath.parents[2]))"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_007_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_007_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "str(mypath.relative_to(mypath.parents[1]))"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_008_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_008_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "mypath.name"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_009_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_009_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "mypath.stem"
     },
     {
-      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_010_Header1.png",
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_010_NormalLong.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
       "code": "mypath.suffix"
