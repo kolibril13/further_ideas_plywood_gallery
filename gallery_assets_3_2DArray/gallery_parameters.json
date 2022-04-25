@@ -10,7 +10,7 @@
       "image_path": "gallery_assets_3_2DArray/2D_Array_002_Checkboard.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
-      "code": "# Checkboard\npixX = 15\npixY = 15\narray = [[(i + j) % 2 for i in range(pixX)] for j in range(pixY)]\ndisp(array)"
+      "code": "pixX = 15\npixY = 15\narray = [[(i + j) % 2 for i in range(pixX)] for j in range(pixY)]\ndisp(array)"
     },
     {
       "image_path": "gallery_assets_3_2DArray/2D_Array_003_Full.png",
