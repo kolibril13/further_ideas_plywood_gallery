@@ -1,0 +1,12 @@
+project_name: Further Ideas Plywood Gallery
+
+gallery_configs:
+  -gallery_config1_ImageGrid.yaml
+  -gallery_config3_2DArray.yaml
+  -gallery_config4_3DArray.yaml
+  -gallery_config5_functions.yaml
+  -gallery_config6_pathlib.yaml
+  -gallery_config7_NumberFormatting.yaml
+
+# this parameter will be inherited to all config files (not yet implmented but will come soon!)
+favicon: icon.png
