@@ -103,7 +103,7 @@
       "code": "shape = (31,31)\nx,y = np.indices(shape)\ndx = int(shape[0]/2)\ndy = int(shape[1]/2)\nradius = 13.5\ncirc = (x - dx) ** 2 + (y - dy) ** 2 <= radius**2\narray = np.zeros(shape)\narray[circ] = 1\ndisp(array)"
     },
     {
-      "image_path": "gallery_assets_3_2DArray/2D_Array_018_Circle.png",
+      "image_path": "gallery_assets_3_2DArray/2D_Array_018_Part.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
       "code": "shape = (31,31)\nradius = 31\nshape = (2 * shape[0], 2 * shape[1]) # factor 2 because cutting later\nx,y = np.indices(shape)\ndx = int(shape[0]/2)\ndy = int(shape[1]/2)\ncirc = (x - dx) ** 2 + (y - dy) ** 2 <= radius**2\narray = np.zeros(shape)\narray[circ] = 1\nregion1 = int(shape[0]/2)\nregion2 = int(shape[1]/2)\narray = array[0:region1,0:region2]\ndisp(array)"
@@ -133,16 +133,46 @@
       "code": "# prepare some coordinates\nx, y = np.indices((8, 8))\n\ncube1 = (x < 3) & (y < 3)\ncube2 = (x >= 5) & (y >= 5)\nlink = np.sqrt(abs(x - y)) <= 1\narray = np.zeros(x.shape)\narray[link] = 14\narray[cube1] = 10\narray[cube2] = 30\ndisp(array)"
     },
     {
-      "image_path": "gallery_assets_3_2DArray/2D_Array_023_RegionDL.png",
+      "image_path": "gallery_assets_3_2DArray/2D_Array_023_rot90.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "disp(np.rot90(array))"
+    },
+    {
+      "image_path": "gallery_assets_3_2DArray/2D_Array_024_fliplr.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "disp(np.fliplr(array))"
+    },
+    {
+      "image_path": "gallery_assets_3_2DArray/2D_Array_025_flipud.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "disp(np.flipud(array))"
+    },
+    {
+      "image_path": "gallery_assets_3_2DArray/2D_Array_026_RegionDL.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
       "code": "array=np.zeros((10, 10))\nfor i in range(len(array)):\n    array[i,0:i]=1\n\ndisp(array)"
     },
     {
-      "image_path": "gallery_assets_3_2DArray/2D_Array_024_RegionDR.png",
+      "image_path": "gallery_assets_3_2DArray/2D_Array_027_RegionDR.png",
       "celltype": "Normal",
       "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
       "code": "array=np.zeros((10, 10))\nfor i in range(len(array)):\n    array[i,0:i]=1\n\narray =np.rot90(array)\ndisp(array)"
+    },
+    {
+      "image_path": "gallery_assets_3_2DArray/2D_Array_028_Rolled0.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "arrayX = np.roll(array, 15, axis=0)\ndisp(arrayX)"
+    },
+    {
+      "image_path": "gallery_assets_3_2DArray/2D_Array_029_Rolled1.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;height: 150px; width: auto;",
+      "code": "arrayX = np.roll(array, 15, axis=1)\ndisp(arrayX)"
     }
   ]
 }
